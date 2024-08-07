@@ -3,7 +3,7 @@ const datas = require("../data/data.json");
 // const fs = require("fs");
 
 router.get("/", (req, res) => {
-  res.send("Hello World!!");
+  res.redirect("/ejs/books");
 });
 
 // menampilkan data semua buku dalam bentuk JSON dengan endpoint GET /books
