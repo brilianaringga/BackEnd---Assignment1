@@ -25,7 +25,15 @@ router.get("/books/:id", (req, res) => {
 
 // menampilkan data dalam template EJS. GET /ejs/books
 router.get("/ejs/books", (req, res) => {
-  res.render("bookList", { books: datas });
+  res.render("layout", { books: datas, view: "bookList" });
+});
+
+// menampilkan data detail dalam template EJS. GET /ejs/books
+router.get("/ejs/books/:id", (req, res) => {
+  const { id } = req.params;
+  const data = datas.find((item) => item.id == id);
+
+  res.render("layout", { book: data, view: "bookDetail" });
 });
 
 module.exports = router;

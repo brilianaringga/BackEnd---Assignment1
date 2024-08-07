@@ -1,0 +1,31 @@
+<h1>Book Detail</h1>
+<a href="/ejs/books/"
+  ><button type="button" class="btn btn-primary">back</button></a
+>
+<div style="height: 10px"></div>
+<table class="table" id="table-book-detail">
+  <tr>
+    <td>ID</td>
+    <td><%= book.id %></td>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td><%= book.title %></td>
+  </tr>
+  <tr>
+    <td>Author</td>
+    <td><%= book.author %></td>
+  </tr>
+  <tr>
+    <td>Year Written</td>
+    <td><%= book.year_written %></td>
+  </tr>
+  <tr>
+    <td>Edition</td>
+    <td><%= book.edition %></td>
+  </tr>
+  <tr>
+    <td>Price</td>
+    <td><%= book.price %></td>
+  </tr>
+</table>

@@ -9,3 +9,16 @@ td,
 th {
   padding: 2px 5px;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:active,
+a:focus {
+  color: black;
+}
+
+#table-book-detail td:nth-child(1) {
+  font-weight: bold;
+}
