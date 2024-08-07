@@ -21,4 +21,6 @@ a:focus {
 
 #table-book-detail td:nth-child(1) {
   font-weight: bold;
+  background-color: antiquewhite;
+  width: 200px;
 }
